@@ -25,10 +25,12 @@ class Patrol : public rclcpp::Node {
 private:
   rclcpp::Subscription<LaserScan>::SharedPtr scan_;
   rclcpp::Publisher<Velocity>::SharedPtr pub_vel_;
-  rclcpp::TimerBase::SharedPtr timer_;
+  rclcpp::TimerBase::SharedPtr timer1_;
+  rclcpp::TimerBase::SharedPtr timer2_;
 
   rclcpp::CallbackGroup::SharedPtr scan_group_;
-  rclcpp::CallbackGroup::SharedPtr pub_group_;
+  rclcpp::CallbackGroup::SharedPtr pub_group1_;
+  rclcpp::CallbackGroup::SharedPtr pub_group2_;
 
   float middle;
   float left;
@@ -40,38 +42,64 @@ private:
     // RCLCPP_INFO(this->get_logger(),"Scan size: %i",num);
 
     middle = msg->ranges[num / 2];
-    left = msg->ranges[(num / 2) + 180 - 1];
-    right = msg->ranges[num / 4];
+    left = msg->ranges[450 - 1];  // most left is 540
+    right = msg->ranges[270 - 1]; // most right is 180
     RCLCPP_INFO(this->get_logger(),
                 "Received scan values: middle[%f], left[%f], right[%f]", middle,
                 left, right);
   }
 
-  void timer_callback() {
+  void timer1_callback() {
 
-    // check frint
-    if (middle > 0.5) {
-
+    // check front. hard limit
+    if (middle > 0.7) {
+      //  move forward
       vel_msg.linear.x = 0.1;
       vel_msg.angular.z = 0.0;
-      // move forward
       pub_vel_->publish(vel_msg);
+      RCLCPP_INFO(this->get_logger(), "Moving forward...");
 
-    } else if (middle <= 0.5) {
-      vel_msg.linear.x = 0.0;
-      vel_msg.angular.z = -0.6;
-      // turn right
+    } else {
+      // detect obstacle; turn right
+      vel_msg.linear.x = 0.1;
+      vel_msg.angular.z = -0.5; //-0.5
       pub_vel_->publish(vel_msg);
-      // sleep(1);
+      RCLCPP_INFO(this->get_logger(), "Detect from front. Turning right...");
+      sleep(2);
+      // RCLCPP_INFO(this->get_logger(), "Detect from front. Stop...");
     }
+  }
+
+  void timer2_callback() {
+
+    // check side. soft limit
+    if (left <= 0.7 && right > 0.7) {
+
+      // turn right
+      vel_msg.linear.x = 0.1;
+      vel_msg.angular.z = -0.4;
+      RCLCPP_INFO(this->get_logger(), "Detect from left. Turning right...");
+
+    } else if (left > 0.7 && right <= 0.7) {
+
+      // turn left
+      vel_msg.linear.x = 0.1;
+      vel_msg.angular.z = 0.4;
+      RCLCPP_INFO(this->get_logger(), "Detect from right. Turning left...");
+    }
+    pub_vel_->publish(vel_msg);
+    sleep(2);
   }
 
 public:
   Patrol() : Node("patrol_node") {
 
-    scan_group_ = this->create_callback_group(
+    scan_group_ =
+        this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
+    pub_group1_ = this->create_callback_group(
         rclcpp::CallbackGroupType::MutuallyExclusive);
-    pub_group_ = this->create_callback_group(
+
+    pub_group2_ = this->create_callback_group(
         rclcpp::CallbackGroupType::MutuallyExclusive);
 
     rclcpp::SubscriptionOptions option1;
@@ -84,8 +112,11 @@ public:
 
     pub_vel_ = this->create_publisher<Velocity>("cmd_vel", 10);
 
-    timer_ = this->create_wall_timer(
-        300ms, std::bind(&Patrol::timer_callback, this), pub_group_);
+    timer1_ = this->create_wall_timer(
+        300ms, std::bind(&Patrol::timer1_callback, this), pub_group1_);
+
+    timer2_ = this->create_wall_timer(
+        300ms, std::bind(&Patrol::timer2_callback, this), pub_group2_);
   }
 };
 
