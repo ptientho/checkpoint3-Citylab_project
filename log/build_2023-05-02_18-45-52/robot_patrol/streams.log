@@ -1,0 +1,75 @@
+[0.026s] Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/citylab_project/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/citylab_project/install/robot_patrol
+[4.531s] -- The C compiler identification is GNU 9.3.0
+[4.688s] -- The CXX compiler identification is GNU 9.3.0
+[4.794s] -- Check for working C compiler: /usr/bin/cc
+[4.970s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.973s] -- Detecting C compiler ABI info
+[5.179s] -- Detecting C compiler ABI info - done
+[5.239s] -- Detecting C compile features
+[5.348s] -- Detecting C compile features - done
+[5.354s] -- Check for working CXX compiler: /usr/bin/c++
+[5.582s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.583s] -- Detecting CXX compiler ABI info
+[5.793s] -- Detecting CXX compiler ABI info - done
+[5.815s] -- Detecting CXX compile features
+[5.817s] -- Detecting CXX compile features - done
+[5.839s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.025s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.026s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.798s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[7.095s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.162s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.941s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[8.075s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.463s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.828s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.851s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.856s] -- Looking for pthread.h
+[9.066s] -- Looking for pthread.h - found
+[9.066s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.304s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.304s] -- Looking for pthread_create in pthreads
+[9.504s] -- Looking for pthread_create in pthreads - not found
+[9.504s] -- Looking for pthread_create in pthread
+[9.738s] -- Looking for pthread_create in pthread - found
+[9.740s] -- Found Threads: TRUE  
+[10.416s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.732s] -- Found robot_patrol_interface: 0.0.0 (/home/user/ros2_ws/install/robot_patrol_interface/share/robot_patrol_interface/cmake)
+[10.971s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.246s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.248s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.248s] -- Configured cppcheck include dirs: /home/user/ros2_ws/src/citylab_project/robot_patrol/include
+[11.249s] -- Configured cppcheck exclude dirs and/or files: 
+[11.251s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.251s] -- Configured cpplint exclude dirs and/or files: 
+[11.255s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.257s] -- Added test 'lint_cmake' to check CMake code style
+[11.259s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.264s] -- Added test 'uncrustify' to check C / C++ code style
+[11.265s] -- Configured uncrustify additional arguments: 
+[11.267s] -- Added test 'xmllint' to check XML markup files
+[11.290s] -- Configuring done
+[11.345s] -- Generating done
+[11.348s] -- Build files have been written to: /home/user/ros2_ws/src/citylab_project/build/robot_patrol
+[11.367s] Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake /home/user/ros2_ws/src/citylab_project/robot_patrol -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws/src/citylab_project/install/robot_patrol
+[11.369s] Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+[11.482s] [35m[1mScanning dependencies of target direction_service_lib[0m
+[11.588s] [ 16%] [32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o[0m
+[13.896s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K In member function '[01m[Kvoid DirectionService::timer1_callback()[m[K':
+[13.897s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:31:11:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kmax_value[m[K' [[01;35m[K-Wunused-variable[m[K]
+[13.897s]    31 |     float [01;35m[Kmax_value[m[K = std::max(middle_temp, std::max(left_temp, right_temp));
+[13.897s]       |           [01;35m[K^~~~~~~~~[m[K
+[13.908s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K At global scope:
+[13.908s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:75:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+[13.908s]    75 |   [01;31m[Kif[m[K (forward) {
+[13.908s]       |   [01;31m[K^~[m[K
+[13.909s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:79:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+[13.909s]    79 |   [01;31m[Kif[m[K (left) {
+[13.909s]       |   [01;31m[K^~[m[K
+[13.909s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:83:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+[13.909s]    83 |   [01;31m[Kif[m[K (right) {
+[13.910s]       |   [01;31m[K^~[m[K
+[15.747s] make[2]: *** [CMakeFiles/direction_service_lib.dir/build.make:63: CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o] Error 1
+[15.750s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/direction_service_lib.dir/all] Error 2
+[15.752s] make: *** [Makefile:141: all] Error 2
+[15.753s] Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8

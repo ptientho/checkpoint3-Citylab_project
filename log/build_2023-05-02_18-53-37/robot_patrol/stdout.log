@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target direction_service_lib[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libdirection_service_lib.so[0m
+[ 33%] Built target direction_service_lib
+[35m[1mScanning dependencies of target test_service_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/test_service_node.dir/src/test_service.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable test_service_node[0m
+[ 66%] Built target test_service_node
+[35m[1mScanning dependencies of target patrol_node[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/patrol_node.dir/src/patrol.cpp.o[0m
+[100%] [32m[1mLinking CXX executable patrol_node[0m
+[100%] Built target patrol_node
+-- Install configuration: ""
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.sh
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.dsv
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node
+-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node" to ""
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node
+-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node" to ""
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol/direction_service.hpp
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_test_service.launch.py
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_patrolling.launch.py
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so
+-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so" to ""
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/package_run_dependencies/robot_patrol
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/parent_prefix_path/robot_patrol
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.sh
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.dsv
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.sh
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.dsv
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.bash
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.sh
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.zsh
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.dsv
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.dsv
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/packages/robot_patrol
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig.cmake
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig-version.cmake
+-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.xml

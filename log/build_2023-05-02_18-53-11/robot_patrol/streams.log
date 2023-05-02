@@ -1,0 +1,11 @@
+[0.052s] Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+[0.156s] [35m[1mScanning dependencies of target direction_service_lib[0m
+[0.263s] [ 16%] [32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o[0m
+[2.615s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K In member function '[01m[Kvoid DirectionService::patrol_callback(std::shared_ptr<robot_patrol_interface::srv::GetDirection_Request_<std::allocator<void> > >, std::shared_ptr<robot_patrol_interface::srv::GetDirection_Response_<std::allocator<void> > >)[m[K':
+[2.616s] [01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:30:3:[m[K [01;31m[Kerror: [m[K'[01m[Kservice_enabled[m[K' was not declared in this scope
+[2.616s]    30 |   [01;31m[Kservice_enabled[m[K = true;
+[2.616s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.426s] make[2]: *** [CMakeFiles/direction_service_lib.dir/build.make:63: CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o] Error 1
+[3.427s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/direction_service_lib.dir/all] Error 2
+[3.429s] make: *** [Makefile:141: all] Error 2
+[3.430s] Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8

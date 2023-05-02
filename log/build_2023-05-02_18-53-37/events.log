@@ -1,0 +1,238 @@
+[0.000000] (-) TimerEvent: {}
+[0.000253] (-) JobUnselected: {'identifier': 'robot_patrol_interface'}
+[0.000326] (robot_patrol) JobQueued: {'identifier': 'robot_patrol', 'dependencies': OrderedDict()}
+[0.000390] (robot_patrol) JobStarted: {'identifier': 'robot_patrol'}
+[0.030109] (robot_patrol) JobProgress: {'identifier': 'robot_patrol', 'progress': 'cmake'}
+[0.031201] (robot_patrol) JobProgress: {'identifier': 'robot_patrol', 'progress': 'build'}
+[0.032384] (robot_patrol) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_ws/src/citylab_project/build/robot_patrol', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.1 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451'), ('NCCL_VERSION', '2.7.8'), ('PWD', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('CUDA_VERSION', '11.1.1'), ('AMENT_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install:/home/simulations/ros2_sims_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/home/simulations/ros2_sims_ws/install/ros1_bridge/lib:/home/user/ros2_ws/install/robot_patrol/lib:/home/user/ros2_ws/install/robot_patrol_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '665535'), ('SLOT_PREFIX', '18c695d9-c6af-4d30-815e-fa1ff7d5182a'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25014'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/foxy/bin:/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SELECTED_ROS_DISTRO', 'foxy'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin'), ('NODE_VERSION', 'v6.11.2'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'foxy'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.086267] (-) TimerEvent: {}
+[0.153102] (robot_patrol) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target direction_service_lib\x1b[0m\n'}
+[0.186432] (-) TimerEvent: {}
+[0.243542] (robot_patrol) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o\x1b[0m\n'}
+[0.286605] (-) TimerEvent: {}
+[0.387162] (-) TimerEvent: {}
+[0.487737] (-) TimerEvent: {}
+[0.588863] (-) TimerEvent: {}
+[0.689430] (-) TimerEvent: {}
+[0.790014] (-) TimerEvent: {}
+[0.891037] (-) TimerEvent: {}
+[0.991714] (-) TimerEvent: {}
+[1.093610] (-) TimerEvent: {}
+[1.194109] (-) TimerEvent: {}
+[1.294591] (-) TimerEvent: {}
+[1.395108] (-) TimerEvent: {}
+[1.495684] (-) TimerEvent: {}
+[1.596209] (-) TimerEvent: {}
+[1.697150] (-) TimerEvent: {}
+[1.798368] (-) TimerEvent: {}
+[1.899569] (-) TimerEvent: {}
+[2.000697] (-) TimerEvent: {}
+[2.101290] (-) TimerEvent: {}
+[2.202632] (-) TimerEvent: {}
+[2.303271] (-) TimerEvent: {}
+[2.403820] (-) TimerEvent: {}
+[2.504661] (-) TimerEvent: {}
+[2.605218] (-) TimerEvent: {}
+[2.706189] (-) TimerEvent: {}
+[2.806779] (-) TimerEvent: {}
+[2.907257] (-) TimerEvent: {}
+[3.007720] (-) TimerEvent: {}
+[3.108235] (-) TimerEvent: {}
+[3.208777] (-) TimerEvent: {}
+[3.309369] (-) TimerEvent: {}
+[3.410207] (-) TimerEvent: {}
+[3.510951] (-) TimerEvent: {}
+[3.611972] (-) TimerEvent: {}
+[3.712634] (-) TimerEvent: {}
+[3.813171] (-) TimerEvent: {}
+[3.913640] (-) TimerEvent: {}
+[4.014193] (-) TimerEvent: {}
+[4.114830] (-) TimerEvent: {}
+[4.124617] (robot_patrol) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libdirection_service_lib.so\x1b[0m\n'}
+[4.214950] (-) TimerEvent: {}
+[4.315465] (-) TimerEvent: {}
+[4.416013] (-) TimerEvent: {}
+[4.425979] (robot_patrol) StdoutLine: {'line': b'[ 33%] Built target direction_service_lib\n'}
+[4.443178] (robot_patrol) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_service_node\x1b[0m\n'}
+[4.516195] (-) TimerEvent: {}
+[4.555494] (robot_patrol) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_service_node.dir/src/test_service.cpp.o\x1b[0m\n'}
+[4.616382] (-) TimerEvent: {}
+[4.716926] (-) TimerEvent: {}
+[4.818594] (-) TimerEvent: {}
+[4.919677] (-) TimerEvent: {}
+[5.021070] (-) TimerEvent: {}
+[5.121546] (-) TimerEvent: {}
+[5.222003] (-) TimerEvent: {}
+[5.322514] (-) TimerEvent: {}
+[5.423070] (-) TimerEvent: {}
+[5.524069] (-) TimerEvent: {}
+[5.624601] (-) TimerEvent: {}
+[5.725103] (-) TimerEvent: {}
+[5.825654] (-) TimerEvent: {}
+[5.926183] (-) TimerEvent: {}
+[6.026766] (-) TimerEvent: {}
+[6.127288] (-) TimerEvent: {}
+[6.227860] (-) TimerEvent: {}
+[6.328420] (-) TimerEvent: {}
+[6.429039] (-) TimerEvent: {}
+[6.529595] (-) TimerEvent: {}
+[6.630157] (-) TimerEvent: {}
+[6.730751] (-) TimerEvent: {}
+[6.831310] (-) TimerEvent: {}
+[6.931904] (-) TimerEvent: {}
+[7.032368] (-) TimerEvent: {}
+[7.132863] (-) TimerEvent: {}
+[7.233377] (-) TimerEvent: {}
+[7.333931] (-) TimerEvent: {}
+[7.434451] (-) TimerEvent: {}
+[7.534998] (-) TimerEvent: {}
+[7.635540] (-) TimerEvent: {}
+[7.736079] (-) TimerEvent: {}
+[7.836638] (-) TimerEvent: {}
+[7.937293] (-) TimerEvent: {}
+[8.037952] (-) TimerEvent: {}
+[8.138444] (-) TimerEvent: {}
+[8.239021] (-) TimerEvent: {}
+[8.339721] (-) TimerEvent: {}
+[8.440822] (-) TimerEvent: {}
+[8.541387] (-) TimerEvent: {}
+[8.642095] (-) TimerEvent: {}
+[8.743062] (-) TimerEvent: {}
+[8.844586] (-) TimerEvent: {}
+[8.945972] (-) TimerEvent: {}
+[9.046484] (-) TimerEvent: {}
+[9.147057] (-) TimerEvent: {}
+[9.247607] (-) TimerEvent: {}
+[9.348236] (-) TimerEvent: {}
+[9.448924] (-) TimerEvent: {}
+[9.549656] (-) TimerEvent: {}
+[9.650366] (-) TimerEvent: {}
+[9.751079] (-) TimerEvent: {}
+[9.851687] (-) TimerEvent: {}
+[9.952401] (-) TimerEvent: {}
+[10.052967] (-) TimerEvent: {}
+[10.153574] (-) TimerEvent: {}
+[10.254097] (-) TimerEvent: {}
+[10.354596] (-) TimerEvent: {}
+[10.455104] (-) TimerEvent: {}
+[10.556079] (-) TimerEvent: {}
+[10.656695] (-) TimerEvent: {}
+[10.757278] (-) TimerEvent: {}
+[10.857861] (-) TimerEvent: {}
+[10.958354] (-) TimerEvent: {}
+[11.059410] (-) TimerEvent: {}
+[11.159959] (-) TimerEvent: {}
+[11.260482] (-) TimerEvent: {}
+[11.361480] (-) TimerEvent: {}
+[11.462498] (-) TimerEvent: {}
+[11.562978] (-) TimerEvent: {}
+[11.663703] (-) TimerEvent: {}
+[11.764237] (-) TimerEvent: {}
+[11.864672] (-) TimerEvent: {}
+[11.965200] (-) TimerEvent: {}
+[12.065720] (-) TimerEvent: {}
+[12.166245] (-) TimerEvent: {}
+[12.266783] (-) TimerEvent: {}
+[12.367708] (-) TimerEvent: {}
+[12.468706] (-) TimerEvent: {}
+[12.569173] (-) TimerEvent: {}
+[12.669669] (-) TimerEvent: {}
+[12.770219] (-) TimerEvent: {}
+[12.870596] (-) TimerEvent: {}
+[12.971180] (-) TimerEvent: {}
+[13.073093] (-) TimerEvent: {}
+[13.173869] (-) TimerEvent: {}
+[13.274604] (-) TimerEvent: {}
+[13.375102] (-) TimerEvent: {}
+[13.475759] (-) TimerEvent: {}
+[13.576409] (-) TimerEvent: {}
+[13.677335] (-) TimerEvent: {}
+[13.777923] (-) TimerEvent: {}
+[13.878467] (-) TimerEvent: {}
+[13.979163] (-) TimerEvent: {}
+[13.985868] (robot_patrol) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable test_service_node\x1b[0m\n'}
+[14.079333] (-) TimerEvent: {}
+[14.179927] (-) TimerEvent: {}
+[14.280693] (-) TimerEvent: {}
+[14.370092] (robot_patrol) StdoutLine: {'line': b'[ 66%] Built target test_service_node\n'}
+[14.380812] (-) TimerEvent: {}
+[14.390941] (robot_patrol) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target patrol_node\x1b[0m\n'}
+[14.482772] (-) TimerEvent: {}
+[14.510824] (robot_patrol) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/patrol_node.dir/src/patrol.cpp.o\x1b[0m\n'}
+[14.582986] (-) TimerEvent: {}
+[14.683589] (-) TimerEvent: {}
+[14.784262] (-) TimerEvent: {}
+[14.884875] (-) TimerEvent: {}
+[14.986080] (-) TimerEvent: {}
+[15.087494] (-) TimerEvent: {}
+[15.188790] (-) TimerEvent: {}
+[15.289308] (-) TimerEvent: {}
+[15.389888] (-) TimerEvent: {}
+[15.490458] (-) TimerEvent: {}
+[15.591009] (-) TimerEvent: {}
+[15.691540] (-) TimerEvent: {}
+[15.792060] (-) TimerEvent: {}
+[15.892577] (-) TimerEvent: {}
+[15.993099] (-) TimerEvent: {}
+[16.093624] (-) TimerEvent: {}
+[16.194207] (-) TimerEvent: {}
+[16.294927] (-) TimerEvent: {}
+[16.395668] (-) TimerEvent: {}
+[16.496801] (-) TimerEvent: {}
+[16.597838] (-) TimerEvent: {}
+[16.698810] (-) TimerEvent: {}
+[16.799431] (-) TimerEvent: {}
+[16.899909] (-) TimerEvent: {}
+[17.000410] (-) TimerEvent: {}
+[17.100944] (-) TimerEvent: {}
+[17.201447] (-) TimerEvent: {}
+[17.302497] (-) TimerEvent: {}
+[17.403219] (-) TimerEvent: {}
+[17.503805] (-) TimerEvent: {}
+[17.604353] (-) TimerEvent: {}
+[17.643903] (robot_patrol) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable patrol_node\x1b[0m\n'}
+[17.704535] (-) TimerEvent: {}
+[17.805114] (-) TimerEvent: {}
+[17.842104] (robot_patrol) StdoutLine: {'line': b'[100%] Built target patrol_node\n'}
+[17.863171] (robot_patrol) CommandEnded: {'returncode': 0}
+[17.905680] (-) TimerEvent: {}
+[17.996347] (robot_patrol) JobProgress: {'identifier': 'robot_patrol', 'progress': 'install'}
+[18.006338] (-) TimerEvent: {}
+[18.028573] (robot_patrol) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol'], 'cwd': '/home/user/ros2_ws/src/citylab_project/build/robot_patrol', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.1 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451'), ('NCCL_VERSION', '2.7.8'), ('PWD', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('CUDA_VERSION', '11.1.1'), ('AMENT_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install:/home/simulations/ros2_sims_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/home/simulations/ros2_sims_ws/install/ros1_bridge/lib:/home/user/ros2_ws/install/robot_patrol/lib:/home/user/ros2_ws/install/robot_patrol_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '665535'), ('SLOT_PREFIX', '18c695d9-c6af-4d30-815e-fa1ff7d5182a'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25014'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/foxy/bin:/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SELECTED_ROS_DISTRO', 'foxy'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin'), ('NODE_VERSION', 'v6.11.2'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'foxy'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[18.051607] (robot_patrol) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.052837] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.sh\n'}
+[18.053936] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.dsv\n'}
+[18.055378] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node\n'}
+[18.057045] (robot_patrol) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node" to ""\n'}
+[18.057712] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node\n'}
+[18.069939] (robot_patrol) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node" to ""\n'}
+[18.070381] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include\n'}
+[18.071122] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol\n'}
+[18.071683] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol/direction_service.hpp\n'}
+[18.071946] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch\n'}
+[18.072164] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_test_service.launch.py\n'}
+[18.072346] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_patrolling.launch.py\n'}
+[18.072718] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so\n'}
+[18.074029] (robot_patrol) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so" to ""\n'}
+[18.074318] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/package_run_dependencies/robot_patrol\n'}
+[18.074759] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/parent_prefix_path/robot_patrol\n'}
+[18.075112] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.sh\n'}
+[18.075546] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.dsv\n'}
+[18.075863] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.sh\n'}
+[18.076221] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.dsv\n'}
+[18.076520] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.bash\n'}
+[18.076649] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.sh\n'}
+[18.076815] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.zsh\n'}
+[18.077092] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.dsv\n'}
+[18.077366] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.dsv\n'}
+[18.077628] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/packages/robot_patrol\n'}
+[18.077899] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.078191] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig.cmake\n'}
+[18.078419] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig-version.cmake\n'}
+[18.078758] (robot_patrol) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.xml\n'}
+[18.081542] (robot_patrol) CommandEnded: {'returncode': 0}
+[18.106589] (-) TimerEvent: {}
+[18.208627] (-) TimerEvent: {}
+[18.309167] (-) TimerEvent: {}
+[18.310184] (robot_patrol) JobEnded: {'identifier': 'robot_patrol', 'rc': 0}
+[18.311613] (-) EventReactorShutdown: {}

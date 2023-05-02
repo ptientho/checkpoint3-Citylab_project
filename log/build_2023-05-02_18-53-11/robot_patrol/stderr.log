@@ -1,0 +1,7 @@
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K In member function '[01m[Kvoid DirectionService::patrol_callback(std::shared_ptr<robot_patrol_interface::srv::GetDirection_Request_<std::allocator<void> > >, std::shared_ptr<robot_patrol_interface::srv::GetDirection_Response_<std::allocator<void> > >)[m[K':
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:30:3:[m[K [01;31m[Kerror: [m[K'[01m[Kservice_enabled[m[K' was not declared in this scope
+   30 |   [01;31m[Kservice_enabled[m[K = true;
+      |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/direction_service_lib.dir/build.make:63: CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/direction_service_lib.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

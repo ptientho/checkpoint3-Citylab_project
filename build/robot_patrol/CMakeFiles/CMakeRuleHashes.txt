@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+f82d51a428ee053d8aea05870cd2904a CMakeFiles/robot_patrol_uninstall

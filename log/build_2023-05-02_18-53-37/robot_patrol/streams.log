@@ -1,0 +1,47 @@
+[0.037s] Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+[0.153s] [35m[1mScanning dependencies of target direction_service_lib[0m
+[0.243s] [ 16%] [32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o[0m
+[4.124s] [ 33%] [32m[1mLinking CXX shared library libdirection_service_lib.so[0m
+[4.426s] [ 33%] Built target direction_service_lib
+[4.443s] [35m[1mScanning dependencies of target test_service_node[0m
+[4.555s] [ 50%] [32mBuilding CXX object CMakeFiles/test_service_node.dir/src/test_service.cpp.o[0m
+[13.986s] [ 66%] [32m[1mLinking CXX executable test_service_node[0m
+[14.370s] [ 66%] Built target test_service_node
+[14.391s] [35m[1mScanning dependencies of target patrol_node[0m
+[14.511s] [ 83%] [32mBuilding CXX object CMakeFiles/patrol_node.dir/src/patrol.cpp.o[0m
+[17.644s] [100%] [32m[1mLinking CXX executable patrol_node[0m
+[17.842s] [100%] Built target patrol_node
+[17.863s] Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+[18.029s] Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/citylab_project/build/robot_patrol
+[18.052s] -- Install configuration: ""
+[18.053s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.sh
+[18.054s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/library_path.dsv
+[18.055s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node
+[18.057s] -- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/patrol_node" to ""
+[18.058s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node
+[18.070s] -- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/robot_patrol/test_service_node" to ""
+[18.070s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include
+[18.071s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol
+[18.071s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/include/robot_patrol/direction_service.hpp
+[18.072s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch
+[18.072s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_test_service.launch.py
+[18.072s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/launch/start_patrolling.launch.py
+[18.072s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so
+[18.074s] -- Set runtime path of "/home/user/ros2_ws/src/citylab_project/install/robot_patrol/lib/libdirection_service_lib.so" to ""
+[18.074s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/package_run_dependencies/robot_patrol
+[18.074s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/parent_prefix_path/robot_patrol
+[18.075s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.sh
+[18.075s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/ament_prefix_path.dsv
+[18.076s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.sh
+[18.076s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/environment/path.dsv
+[18.076s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.bash
+[18.076s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.sh
+[18.076s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.zsh
+[18.077s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/local_setup.dsv
+[18.077s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.dsv
+[18.077s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/ament_index/resource_index/packages/robot_patrol
+[18.078s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/ament_cmake_export_libraries-extras.cmake
+[18.078s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig.cmake
+[18.078s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/cmake/robot_patrolConfig-version.cmake
+[18.078s] -- Installing: /home/user/ros2_ws/src/citylab_project/install/robot_patrol/share/robot_patrol/package.xml
+[18.083s] Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/citylab_project/build/robot_patrol

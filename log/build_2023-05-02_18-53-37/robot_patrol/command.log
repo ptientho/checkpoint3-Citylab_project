@@ -1,0 +1,4 @@
+Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /home/user/ros2_ws/src/citylab_project/build/robot_patrol -- -j8 -l8
+Invoking command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/citylab_project/build/robot_patrol
+Invoked command in '/home/user/ros2_ws/src/citylab_project/build/robot_patrol' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /home/user/ros2_ws/src/citylab_project/build/robot_patrol

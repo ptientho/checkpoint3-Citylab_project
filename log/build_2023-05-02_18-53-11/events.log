@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.000331] (-) JobUnselected: {'identifier': 'robot_patrol_interface'}
+[0.000415] (robot_patrol) JobQueued: {'identifier': 'robot_patrol', 'dependencies': OrderedDict([('robot_patrol_interface', '/home/user/ros2_ws/src/citylab_project/install/robot_patrol_interface')])}
+[0.000490] (robot_patrol) JobStarted: {'identifier': 'robot_patrol'}
+[0.044896] (robot_patrol) JobProgress: {'identifier': 'robot_patrol', 'progress': 'cmake'}
+[0.046079] (robot_patrol) JobProgress: {'identifier': 'robot_patrol', 'progress': 'build'}
+[0.047170] (robot_patrol) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_ws/src/citylab_project/build/robot_patrol', 'env': OrderedDict([('ROS_VERSION', '2'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('GAZEBO_MASTER_URI', 'http://1_xterm:11345'), ('ROS_PYTHON_VERSION', '3'), ('HOSTNAME', '1_xterm'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.1 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451'), ('NCCL_VERSION', '2.7.8'), ('PWD', '/home/user/ros2_ws/src/citylab_project/build/robot_patrol'), ('PORT', '4000'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('ROS_IP', ''), ('HOME', '/home/user'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('CUDA_VERSION', '11.1.1'), ('AMENT_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('CMAKE_PREFIX_PATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge:/home/user/ros2_ws/install/robot_patrol:/home/user/ros2_ws/install/robot_patrol_interface:/opt/ros/foxy'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo'), ('COLCON_PREFIX_PATH', '/home/user/ros2_ws/install:/home/simulations/ros2_sims_ws/install'), ('GAZEBO_MASTER_PORT', '11345'), ('NVM_DIR', '/usr/local/share/shell/.nvm'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PYTHONPATH', '/home/simulations/ros2_sims_ws/install/ros1_bridge/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol/lib/python3.8/site-packages:/home/user/ros2_ws/install/robot_patrol_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('TERM', 'xterm-color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SNAPCRAFT_BUILD_ENVIRONMENT', 'host'), ('GAZEBO_MASTER_HOSTNAME', '1_xterm'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('DISPLAY', ':1'), ('SHLVL', '2'), ('NVM_CD_FLAGS', ''), ('ROS_MASTER_URI', 'http://1_xterm:11311'), ('ROS_HOSTNAME', '1_xterm'), ('LD_LIBRARY_PATH', '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/home/simulations/ros2_sims_ws/install/ros1_bridge/lib:/home/user/ros2_ws/install/robot_patrol/lib:/home/user/ros2_ws/install/robot_patrol_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('ROS_LOCALHOST_ONLY', '0'), ('SLOT_SHELL_START_ID', '665535'), ('SLOT_PREFIX', '18c695d9-c6af-4d30-815e-fa1ff7d5182a'), ('LC_ALL', 'C'), ('SOURCE_ROS1_WS', ''), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox'), ('SLOT_JENKINS_PORT', '25014'), ('SLOT_SYSTEMD', 'False'), ('PATH', '/opt/ros/foxy/bin:/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('SELECTED_ROS_DISTRO', 'foxy'), ('NVM_BIN', '/usr/local/share/shell/.nvm/versions/node/v6.11.2/bin'), ('NODE_VERSION', 'v6.11.2'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISTRO', 'foxy'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('OLDPWD', '/home/user/ros2_ws'), ('SOURCE_ROS2_WS', 'True'), ('SLOT_ROSBRIDGE_PORT', '20001'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.094872] (-) TimerEvent: {}
+[0.156630] (robot_patrol) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target direction_service_lib\x1b[0m\n'}
+[0.195490] (-) TimerEvent: {}
+[0.262911] (robot_patrol) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o\x1b[0m\n'}
+[0.295660] (-) TimerEvent: {}
+[0.396201] (-) TimerEvent: {}
+[0.497810] (-) TimerEvent: {}
+[0.599359] (-) TimerEvent: {}
+[0.700559] (-) TimerEvent: {}
+[0.801065] (-) TimerEvent: {}
+[0.902359] (-) TimerEvent: {}
+[1.002895] (-) TimerEvent: {}
+[1.103982] (-) TimerEvent: {}
+[1.204522] (-) TimerEvent: {}
+[1.305002] (-) TimerEvent: {}
+[1.405507] (-) TimerEvent: {}
+[1.506105] (-) TimerEvent: {}
+[1.606637] (-) TimerEvent: {}
+[1.707205] (-) TimerEvent: {}
+[1.810422] (-) TimerEvent: {}
+[1.910993] (-) TimerEvent: {}
+[2.012193] (-) TimerEvent: {}
+[2.112783] (-) TimerEvent: {}
+[2.213322] (-) TimerEvent: {}
+[2.313903] (-) TimerEvent: {}
+[2.414537] (-) TimerEvent: {}
+[2.515054] (-) TimerEvent: {}
+[2.615261] (robot_patrol) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:\x1b[m\x1b[K In member function '\x1b[01m\x1b[Kvoid DirectionService::patrol_callback(std::shared_ptr<robot_patrol_interface::srv::GetDirection_Request_<std::allocator<void> > >, std::shared_ptr<robot_patrol_interface::srv::GetDirection_Response_<std::allocator<void> > >)\x1b[m\x1b[K':\n"}
+[2.615697] (-) TimerEvent: {}
+[2.615912] (robot_patrol) StderrLine: {'line': b"\x1b[01m\x1b[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:30:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K'\x1b[01m\x1b[Kservice_enabled\x1b[m\x1b[K' was not declared in this scope\n"}
+[2.616103] (robot_patrol) StderrLine: {'line': b'   30 |   \x1b[01;31m\x1b[Kservice_enabled\x1b[m\x1b[K = true;\n'}
+[2.616273] (robot_patrol) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.715889] (-) TimerEvent: {}
+[2.816358] (-) TimerEvent: {}
+[2.916858] (-) TimerEvent: {}
+[3.017425] (-) TimerEvent: {}
+[3.118460] (-) TimerEvent: {}
+[3.219064] (-) TimerEvent: {}
+[3.319734] (-) TimerEvent: {}
+[3.420370] (-) TimerEvent: {}
+[3.423260] (robot_patrol) StderrLine: {'line': b'make[2]: *** [CMakeFiles/direction_service_lib.dir/build.make:63: CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o] Error 1\n'}
+[3.426657] (robot_patrol) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/direction_service_lib.dir/all] Error 2\n'}
+[3.427246] (robot_patrol) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.430346] (robot_patrol) CommandEnded: {'returncode': 2}
+[3.520541] (-) TimerEvent: {}
+[3.600961] (robot_patrol) JobEnded: {'identifier': 'robot_patrol', 'rc': 2}
+[3.611799] (-) EventReactorShutdown: {}

@@ -1,0 +1,17 @@
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K In member function '[01m[Kvoid DirectionService::timer1_callback()[m[K':
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:31:11:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kmax_value[m[K' [[01;35m[K-Wunused-variable[m[K]
+   31 |     float [01;35m[Kmax_value[m[K = std::max(middle_temp, std::max(left_temp, right_temp));
+      |           [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:[m[K At global scope:
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:75:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+   75 |   [01;31m[Kif[m[K (forward) {
+      |   [01;31m[K^~[m[K
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:79:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+   79 |   [01;31m[Kif[m[K (left) {
+      |   [01;31m[K^~[m[K
+[01m[K/home/user/ros2_ws/src/citylab_project/robot_patrol/src/direction_service.cpp:83:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before '[01m[Kif[m[K'
+   83 |   [01;31m[Kif[m[K (right) {
+      |   [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/direction_service_lib.dir/build.make:63: CMakeFiles/direction_service_lib.dir/src/direction_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/direction_service_lib.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
