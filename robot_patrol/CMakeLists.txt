@@ -1,3 +1,5 @@
+# include/robot_patrol/direction_service.hpp #
+
 cmake_minimum_required(VERSION 3.5)
 project(robot_patrol)
 
@@ -20,6 +22,51 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(robot_patrol_interface REQUIRED)
+
+# for user libraries
+include_directories(include)
+
+# define the library as target
+add_library(direction_service_lib SHARED src/direction_service.cpp)
+ament_target_dependencies(direction_service_lib rclcpp geometry_msgs sensor_msgs robot_patrol_interface)
+ament_export_libraries(direction_service_lib)
+
+# create executable target and link it with library
+add_executable(patrol_node src/patrol.cpp)
+ament_target_dependencies(patrol_node rclcpp geometry_msgs sensor_msgs)
+target_link_libraries(patrol_node direction_service_lib)
+
+#add_executable(direction_service_node src/direction_service.cpp)
+#ament_target_dependencies(direction_service_node rclcpp geometry_msgs sensor_msgs)
+#target_link_libraries(direction_service_node direction_service_lib)
+
+# install target executables in the lib folder to be seen by setup.bash
+install(TARGETS
+  patrol_node
+  DESTINATION lib/${PROJECT_NAME}/
+)
+
+# install include directories which has headers to be exported
+install(DIRECTORY
+  include/
+  DESTINATION include
+)
+
+# install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  TARGETS direction_service_lib
+  EXPORT direction_service_lib
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  RUNTIME DESTINATION bin
+  INCLUDES DESTINATION include
+)
 
 
 if(BUILD_TESTING)
@@ -32,20 +79,7 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-add_executable(patrol_node src/patrol.cpp)
-ament_target_dependencies(patrol_node rclcpp sensor_msgs geometry_msgs)
-
-install(TARGETS
-   patrol_node
-   DESTINATION lib/${PROJECT_NAME}
- )
-
-install(DIRECTORY
-  launch
-  DESTINATION share/${PROJECT_NAME}/
-)
-
-
  
+
+
 ament_package()

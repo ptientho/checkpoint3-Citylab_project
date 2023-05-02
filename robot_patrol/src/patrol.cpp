@@ -1,21 +1,6 @@
-#include "geometry_msgs/msg/detail/twist__struct.hpp"
-#include "geometry_msgs/msg/twist.hpp"
-#include "rclcpp/callback_group.hpp"
-#include "rclcpp/executors/multi_threaded_executor.hpp"
-#include "rclcpp/logging.hpp"
-#include "rclcpp/node.hpp"
-#include "rclcpp/publisher.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "rclcpp/subscription.hpp"
-#include "rclcpp/subscription_options.hpp"
-#include "rclcpp/timer.hpp"
-#include "rclcpp/utilities.hpp"
-#include "sensor_msgs/msg/detail/laser_scan__struct.hpp"
-#include "sensor_msgs/msg/laser_scan.hpp"
-#include "unistd.h"
-#include <functional>
-#include <memory>
-
+#include "robot_patrol/direction_service.hpp"
+/*
 using LaserScan = sensor_msgs::msg::LaserScan;
 using Velocity = geometry_msgs::msg::Twist;
 using namespace std::chrono_literals;
@@ -39,11 +24,11 @@ private:
   void laser_callback(const LaserScan::SharedPtr msg) {
 
     int num = msg->ranges.size();
-    // RCLCPP_INFO(this->get_logger(),"Scan size: %i",num);
+    //    RCLCPP_INFO(this->get_logger(),"Scan size: %i",num);
 
-    middle = msg->ranges[num / 2];
-    left = msg->ranges[450 - 1];  // most left is 540
-    right = msg->ranges[270 - 1]; // most right is 180
+    middle = msg->ranges[num / 2]; // middle at 360
+    left = msg->ranges[450 - 1];   // most left is 540
+    right = msg->ranges[270 - 1];  // most right is 180
     RCLCPP_INFO(this->get_logger(),
                 "Received scan values: middle[%f], left[%f], right[%f]", middle,
                 left, right);
@@ -77,14 +62,14 @@ private:
 
       // turn right
       vel_msg.linear.x = 0.1;
-      vel_msg.angular.z = -0.4;
+      vel_msg.angular.z = -0.5;
       RCLCPP_INFO(this->get_logger(), "Detect from left. Turning right...");
 
     } else if (left > 0.7 && right <= 0.7) {
 
       // turn left
       vel_msg.linear.x = 0.1;
-      vel_msg.angular.z = 0.4;
+      vel_msg.angular.z = 0.5;
       RCLCPP_INFO(this->get_logger(), "Detect from right. Turning left...");
     }
     pub_vel_->publish(vel_msg);
@@ -119,12 +104,15 @@ public:
         300ms, std::bind(&Patrol::timer2_callback, this), pub_group2_);
   }
 };
+*/
 
 int main(int argc, char **argv) {
 
   rclcpp::init(argc, argv);
 
-  std::shared_ptr<Patrol> node = std::make_shared<Patrol>();
+  std::string srv_name = "/direction_service";
+  std::shared_ptr<DirectionService> node =
+      std::make_shared<DirectionService>(srv_name);
 
   rclcpp::executors::MultiThreadedExecutor my_exe;
   my_exe.add_node(node);
