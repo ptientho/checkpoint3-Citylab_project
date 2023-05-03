@@ -31,15 +31,20 @@ include_directories(include)
 add_library(direction_service_lib SHARED src/direction_service.cpp)
 ament_target_dependencies(direction_service_lib rclcpp geometry_msgs sensor_msgs robot_patrol_interface)
 ament_export_libraries(direction_service_lib)
+add_executable(direction_service_node src/direction_service.cpp)
+ament_target_dependencies(direction_service_node rclcpp geometry_msgs sensor_msgs robot_patrol_interface)
 
 # create executable target and link it with library
 add_executable(patrol_node src/patrol.cpp)
 ament_target_dependencies(patrol_node rclcpp geometry_msgs sensor_msgs)
 target_link_libraries(patrol_node direction_service_lib)
 
+
 add_executable(test_service_node src/test_service.cpp)
 ament_target_dependencies(test_service_node rclcpp sensor_msgs robot_patrol_interface)
 
+add_executable(patrol_v2_node src/patrol_v2.cpp)
+ament_target_dependencies(patrol_v2_node rclcpp sensor_msgs robot_patrol_interface)
 
 #add_executable(direction_service_node src/direction_service.cpp)
 #ament_target_dependencies(direction_service_node rclcpp geometry_msgs sensor_msgs)
@@ -48,7 +53,9 @@ ament_target_dependencies(test_service_node rclcpp sensor_msgs robot_patrol_inte
 # install target executables in the lib folder to be seen by setup.bash
 install(TARGETS
   patrol_node
+  direction_service_node
   test_service_node
+  patrol_v2_node
   DESTINATION lib/${PROJECT_NAME}/
 )
 

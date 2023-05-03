@@ -73,3 +73,24 @@ DirectionService::DirectionService(std::string &service_name)
 }
 
 DirectionService::~DirectionService() {}
+
+
+
+
+int main(int argc, char **argv) {
+
+  rclcpp::init(argc, argv);
+
+  std::string srv_name = "/direction_service";
+  std::shared_ptr<DirectionService> node =
+      std::make_shared<DirectionService>(srv_name);
+
+  rclcpp::executors::MultiThreadedExecutor my_exe;
+  my_exe.add_node(node);
+  my_exe.spin();
+
+  rclcpp::shutdown();
+  return 0;
+}
+
+
