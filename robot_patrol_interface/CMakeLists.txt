@@ -19,6 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 if(BUILD_TESTING)
@@ -34,7 +35,8 @@ endif()
 
  rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/GetDirection.srv"
-	DEPENDENCIES sensor_msgs
+	"action/GoToPoint.action"
+	DEPENDENCIES sensor_msgs geometry_msgs
 )
 
 ament_package()

@@ -136,7 +136,11 @@ public:
         500ms, std::bind(&CallPatrolService::send_request, this), timer_group_);
   }
 
-  ~CallPatrolService() {}
+  ~CallPatrolService() {
+    vel_msg.linear.x = 0.0;
+    vel_msg.angular.z = 0.0;
+    vel_pub->publish(vel_msg);
+  }
 };
 
 int main(int argc, char **argv) {

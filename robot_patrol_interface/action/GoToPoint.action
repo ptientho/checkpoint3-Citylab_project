@@ -1,0 +1,5 @@
+geometry_msgs/Point32 goal_pos
+---
+bool status
+---
+geometry_msgs/Point32 current_pos
