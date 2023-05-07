@@ -52,7 +52,7 @@ private:
   void timer1_callback() {
 
     // check front. hard limit
-    if (middle > 0.7) {
+    if (middle > 0.8) {
       //  move forward
       vel_msg.linear.x = 0.1;
       vel_msg.angular.z = 0.0;
@@ -65,7 +65,7 @@ private:
       vel_msg.angular.z = -0.5; //-0.5
       pub_vel_->publish(vel_msg);
       RCLCPP_INFO(this->get_logger(), "Detect from front. Turning right...");
-      sleep(2);
+      sleep(1);
       // RCLCPP_INFO(this->get_logger(), "Detect from front. Stop...");
     }
   }
@@ -73,14 +73,14 @@ private:
   void timer2_callback() {
 
     // check side. soft limit
-    if (left <= 0.7 && right > 0.7) {
+    if (left <= 0.8 && right > 0.8) {
 
       // turn right
       vel_msg.linear.x = 0.1;
       vel_msg.angular.z = -0.4;
       RCLCPP_INFO(this->get_logger(), "Detect from left. Turning right...");
 
-    } else if (left > 0.7 && right <= 0.7) {
+    } else if (left > 0.8 && right <= 0.8) {
 
       // turn left
       vel_msg.linear.x = 0.1;
@@ -88,7 +88,7 @@ private:
       RCLCPP_INFO(this->get_logger(), "Detect from right. Turning left...");
     }
     pub_vel_->publish(vel_msg);
-    sleep(2);
+    sleep(1);
   }
 
 public:
