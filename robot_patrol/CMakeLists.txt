@@ -20,9 +20,12 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(robot_patrol_interface REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 # for user libraries
 include_directories(include)
@@ -46,6 +49,10 @@ ament_target_dependencies(test_service_node rclcpp sensor_msgs robot_patrol_inte
 add_executable(patrol_v2_node src/patrol_v2.cpp)
 ament_target_dependencies(patrol_v2_node rclcpp sensor_msgs robot_patrol_interface)
 
+add_executable(go_to_point_action_node src/go_to_point_action.cpp)
+ament_target_dependencies(go_to_point_action_node rclcpp rclcpp_action geometry_msgs nav_msgs robot_patrol_interface tf2)
+
+
 #add_executable(direction_service_node src/direction_service.cpp)
 #ament_target_dependencies(direction_service_node rclcpp geometry_msgs sensor_msgs)
 #target_link_libraries(direction_service_node direction_service_lib)
@@ -56,6 +63,7 @@ install(TARGETS
   direction_service_node
   test_service_node
   patrol_v2_node
+  go_to_point_action_node
   DESTINATION lib/${PROJECT_NAME}/
 )
 
