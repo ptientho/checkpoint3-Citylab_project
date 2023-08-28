@@ -7,6 +7,7 @@
 <p>The robot subscribes to the scanner topic and publishes the velocity topic. With these two topics, the robot is able to avoid the obstacles.<br>
 To launch the code, run the following command</p>
 
+
 ros2 launch robot_patrol start_patrolling.launch.py
 
 <p>The result...</p>
