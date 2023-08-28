@@ -15,7 +15,7 @@ To launch the code, run the following command</p>
 <p>In this section, a service server is to make decisions based on the scanner data whether to direct the robot to move forward, left, or right. A service client receives any of those commands from the server and publishes the velocity topic to move the robot.<br>
 To launch the code, run the following command. This command will launch two nodes- a service server and a service client.</p>
 
-        ros2 launch robot_patrol main.launch.py
+    ros2 launch robot_patrol main.launch.py
 
 <p>The result...</p>
 
