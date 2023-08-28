@@ -9,14 +9,13 @@ To launch the code, run the following command</p>
 
     ros2 launch robot_patrol start_patrolling.launch.py
 
-
 <p>The result...</p>
 
 ## Control Turtlebot3 in simulation via ROS service
 <p>In this section, a service server is to make decisions based on the scanner data whether to direct the robot to move forward, left, or right. A service client receives any of those commands from the server and publishes the velocity topic to move the robot.<br>
 To launch the code, run the following command. This command will launch two nodes- a service server and a service client.</p>
 
-ros2 launch robot_patrol main.launch.py
+    ros2 launch robot_patrol main.launch.py
 
 <p>The result...</p>
 
@@ -29,7 +28,7 @@ ros2 launch robot_patrol main.launch.py
 </ol>
 <p>To launch the action server, run the following command</p>
 
-ros2 launch robot_patrol start_gotopoint_action.launch.py
+    ros2 launch robot_patrol start_gotopoint_action.launch.py
 
 <p>To send a goal to the server, type the following command in the terminal. For example, send a goal x=0.7, y=0.3, theta=0.0</p>
 
