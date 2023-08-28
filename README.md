@@ -8,8 +8,7 @@
 To launch the code, run the following command</p>
 
 
-ros2 launch robot_patrol start_patrolling.launch.py
-
+  ros2 launch robot_patrol start_patrolling.launch.py
 
 
 <p>The result...</p>
