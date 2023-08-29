@@ -17,7 +17,7 @@ To launch the code, run the following command. This command will launch two node
 
     ros2 launch robot_patrol main.launch.py
 
-<p>The result...</p>
+[![checkpoint3_1](https://res.cloudinary.com/marcomontalbano/image/upload/v1693272454/video_to_markdown/images/google-drive--1Pnlb1dBlBgV25DNDlrWT__AUS5DjRJ3E-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1Pnlb1dBlBgV25DNDlrWT__AUS5DjRJ3E/view?usp=sharing "checkpoint3_1")
 
 ## Control Turtlebot3 in simulation via ROS action
 <p>In this section, an action server is created to direct the robot to a goal position received via the terminal. The server will do three things.</p>
