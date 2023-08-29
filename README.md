@@ -32,11 +32,9 @@ To launch the code, run the following command. This command will launch two node
 
 <p>To send a goal to the server, type the following command in the terminal. For example, send a goal x=0.7, y=0.3, theta=0.0</p>
 
-        ros2 action send_goal -f /go_to_point robot_patrol/action/GoToPoint "goal_pos:
-          x: 0.7
-          y: 0.3
-          z: 0.0
-        "
+    ros2 action send_goal -f /go_to_point robot_patrol_interface/action/GoToPoint "{goal_pos: {x: 0.7, y: 0.3, z: 0.0}}"
+
+[![checkpoint3_2](https://res.cloudinary.com/marcomontalbano/image/upload/v1693273365/video_to_markdown/images/google-drive--1eCHL0YVOvhLytsv9_cY5ovnWBLL6ULGC-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1eCHL0YVOvhLytsv9_cY5ovnWBLL6ULGC/view?usp=sharing "checkpoint3_2")
 
 
 
