@@ -9,7 +9,7 @@ To launch the code, run the following command</p>
 
     ros2 launch robot_patrol start_patrolling.launch.py
 
-<p>The result...</p>
+[![checkpoint3](https://res.cloudinary.com/marcomontalbano/image/upload/v1693272078/video_to_markdown/images/google-drive--1DGZdfjk02qPHQJp7-O23J5epePi0Vz9i-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1DGZdfjk02qPHQJp7-O23J5epePi0Vz9i/view?usp=sharing "checkpoint3")
 
 ## Control Turtlebot3 in simulation via ROS service
 <p>In this section, a service server is to make decisions based on the scanner data whether to direct the robot to move forward, left, or right. A service client receives any of those commands from the server and publishes the velocity topic to move the robot.<br>
